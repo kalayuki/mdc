@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;    
+}
+/* Agrega esto en tu archivo CSS */
+.edited {
+  background-color: lightgreen; /* Cambia el color de fondo a verde claro */
+}
+
+.card{
+  display: flex;
+  justify-content: center;
+  
+  gap: 40px;
+}
+
+.card-body{
+  width: 50%;
+}
+
+.curso{
+  width: 50%;
+}
+
+/* presentacion de cursos eliminar editar */
+.presentacio{
+  display: flex;
+  gap: 20px;
+  border-radius: 4px, solid;
+}
+
+/* Estilos para la tabla */
+.table-responsive {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th, .table td {
+  padding: 8px 12px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.table-bordered th, .table-bordered td {
+  border: 1px solid #ddd;
+}
+
+.table thead th {
+  background-color: #f8f9fa;
+}
+
+/* Estilos para la columna de acciones */
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 5px;
+}
+
+/* Botones de acción */
+.btn {
+  font-size: 14px;
+  padding: 5px 10px;
+}
+
+.btn-eliminar {
+  background-color: #dc3545;
+  color: white;
+}
+
+.btn-editar {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Hover efectos */
+.btn:hover {
+  opacity: 0.85;
+}
+.cerrar {
+  padding: 8px 16px;
+  font-size: 1em;
+  background-color: #e0e0e0; /* Fondo gris claro */
+  color: #333;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.cerrar:hover {
+  background-color: #bcbcbc; /* Cambia a un tono más oscuro al pasar el cursor */
+}
+
+.acordeon{
+  width: 80%;
+}

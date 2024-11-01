@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;    
+}
+
+/* Estilo del body */
+.body__ver {
+    background-color: #f3f5f9;
+    color: #1a1a1a;
+    font-family: Arial, sans-serif;
+  }
+  .cuerpo__page{
+    display: flex;
+    width: 100%;
+    
+    align-items: center;
+    justify-content: center;
+   
+    gap: 90px;
+  }
+  
+  /* Encabezado */
+ /* Estilo del contenedor de encabezado en formato vertical */
+.encabezado {
+  position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-right: 2px solid #ccc;
+}
+  
+  /* Estilo del título del encabezado */
+  .encabezado h1 {
+    font-size: 1.5rem;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo del menú */
+  .menu__ver {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Estilo de los enlaces del menú */
+  .menu__ver li a {
+    text-decoration: none;
+    color: #1a1a1a;
+    font-size: 1rem;
+  }
+  
+  .menu__ver li a:hover {
+    color: #007bff;
+  }
+  
+  /* Título y subtítulo principal */
+  .main__titulo {
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .titulo__capacitacion {
+    font-size: 2.5rem;
+    color: #1a1a1a;
+  }
+  
+  .subtitulo__capacitacion {
+    color: #9b9b9b;
+    font-size: 1.2rem;
+  }
+  
+  /* Contenedor de tarjetas */
+  .tarjetas {
+    margin-left: 220px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  
+  /* Estilo de cada tarjeta */
+  .tarjeta {
+    
+    width: 1000px;
+    
+  }
+  
+  .titulo__tarjeta {
+    font-size: 1.5rem;
+    color: #1a1a1a;
+    font-weight: bold;
+  }
+  
+  .tarjeta_texto {
+    color: #5a5a5a;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  /* Menu de cada tarjeta */
+  .menu_tarjeta {
+    list-style: none; /* Elimina las viñetas */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .contenedor__menu__tarjeta__desplegable {
+    font-size: 1rem;
+  }
+  
+  .menu__tarjeta__desplegable a {
+    text-decoration: none;
+    color: #1a1a1a;
+    font-weight: bold;
+  }
+  
+  .cantidad__de__cursos {
+    color: #007bff;
+    font-size: 0.9rem;
+  }
+  
+  .menu__tarjeta__desplegable a:hover {
+    color: #007bff;
+    cursor: pointer;
+  }
+  
+  /* Cursos desplegables */
+  
+  
+  .desplegable {
+    list-style: none; /* Elimina las viñetas de los cursos */
+    padding: 0;
+    margin: 0;
+  }
+  .tarjeta {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    
+    background-color: #f9f9f9;
+    border-left: 20px solid #FFD700;
+}
+
+
+.contenido {
+    display: none;
+    padding-left: 20px;
+    color: #1A2D63;
+}
+.contenido a {
+    display: block;
+    text-decoration: none;
+    color: #1A2D63;
+    margin: 5px 0;
+}
+.contenido a:hover {
+    text-decoration: underline;
+}
+
+
+.contenedor_de_curso{
+  display: flex;
+  flex-direction: column;
+}
