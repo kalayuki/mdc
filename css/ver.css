@@ -1,178 +1,172 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-family: sans-serif;    
+/* Reset básico para asegurar consistencia */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Estilo del body */
-.body__ver {
-    background-color: #f3f5f9;
-    color: #1a1a1a;
-    font-family: Arial, sans-serif;
-  }
-  .cuerpo__page{
-    display: flex;
-    width: 100%;
-    
-    align-items: center;
-    justify-content: center;
-   
-    gap: 90px;
-  }
-  
-  /* Encabezado */
- /* Estilo del contenedor de encabezado en formato vertical */
-.encabezado {
-  position: fixed;
-    top: 0;
-    left: 0;
-    width: 200px;
-    height: 100%;
-    background-color: #fff;
-    padding: 20px;
-    border-right: 2px solid #ccc;
-}
-  
-  /* Estilo del título del encabezado */
-  .encabezado h1 {
-    font-size: 1.5rem;
-    color: #1a1a1a;
-    margin-bottom: 20px;
-  }
-  
-  /* Estilo del menú */
-  .menu__ver {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 0;
-    margin: 0;
-  }
-  
-  /* Estilo de los enlaces del menú */
-  .menu__ver li a {
-    text-decoration: none;
-    color: #1a1a1a;
-    font-size: 1rem;
-  }
-  
-  .menu__ver li a:hover {
-    color: #007bff;
-  }
-  
-  /* Título y subtítulo principal */
-  .main__titulo {
-    text-align: center;
-    padding: 20px 0;
-  }
-  
-  .titulo__capacitacion {
-    font-size: 2.5rem;
-    color: #1a1a1a;
-  }
-  
-  .subtitulo__capacitacion {
-    color: #9b9b9b;
-    font-size: 1.2rem;
-  }
-  
-  /* Contenedor de tarjetas */
-  .tarjetas {
-    margin-left: 220px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-  }
-  
-  /* Estilo de cada tarjeta */
-  .tarjeta {
-    
-    width: 1000px;
-    
-  }
-  
-  .titulo__tarjeta {
-    font-size: 1.5rem;
-    color: #1a1a1a;
-    font-weight: bold;
-  }
-  
-  .tarjeta_texto {
-    color: #5a5a5a;
-    font-size: 1rem;
-    line-height: 1.5;
-  }
-  
-  /* Menu de cada tarjeta */
-  .menu_tarjeta {
-    list-style: none; /* Elimina las viñetas */
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  
-  .contenedor__menu__tarjeta__desplegable {
-    font-size: 1rem;
-  }
-  
-  .menu__tarjeta__desplegable a {
-    text-decoration: none;
-    color: #1a1a1a;
-    font-weight: bold;
-  }
-  
-  .cantidad__de__cursos {
-    color: #007bff;
-    font-size: 0.9rem;
-  }
-  
-  .menu__tarjeta__desplegable a:hover {
-    color: #007bff;
-    cursor: pointer;
-  }
-  
-  /* Cursos desplegables */
-  
-  
-  .desplegable {
-    list-style: none; /* Elimina las viñetas de los cursos */
-    padding: 0;
-    margin: 0;
-  }
-  .tarjeta {
-    border: 1px solid #ccc;
-    padding: 20px;
-    margin: 10px;
-    
-    background-color: #f9f9f9;
-    border-left: 20px solid #FFD700;
+/* Fuente y cuerpo de la página */
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f7f7f7;
 }
 
-
-.contenido {
-    display: none;
-    padding-left: 20px;
-    color: #1A2D63;
-}
-.contenido a {
-    display: block;
-    text-decoration: none;
-    color: #1A2D63;
-    margin: 5px 0;
-}
-.contenido a:hover {
-    text-decoration: underline;
-}
-
-
-.contenedor_de_curso{
+.cuerpo__page {
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+.encabezado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 15px 30px;
+  background-color: #002f6c;
+}
+
+.encabezado h1 {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.menu__ver {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.menu__ver li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.menu__ver li a:hover {
+  color: #f5ba13;
+}
+
+.main {
+  padding: 30px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.main__titulo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.titulo__capacitacion {
+  font-size: 2rem;
+  color: #333;
+}
+
+.subtitulo__capacitacion {
+  color: #666;
+  font-size: 1rem;
+}
+
+.tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Tarjeta */
+.tarjeta {
+  background-color: #ffffff;
+  width: 280px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.tarjeta:hover {
+  transform: translateY(-5px);
+}
+
+.cuerpo__tarjeta {
+  padding: 20px;
+  text-align: center;
+}
+
+.titulo__tarjeta {
+  font-size: 1.3rem;
+  color: #002f6c;
+  margin-bottom: 10px;
+}
+
+.cuerpo__tarjeta p {
+  color: #555;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.contenedor_de_curso {
+  padding: 15px;
+}
+
+/* Botones */
+.acordeon, .boton-cerrar {
+  display: inline-block;
+  background-color: #002f6c;
+  color: #ffffff;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+  font-size: 0.9rem;
+}
+
+.acordeon:hover, .boton-cerrar:hover {
+  background-color: #f5ba13;
+}
+
+.boton-cerrar {
+  background-color: #d9534f;
+}
+
+.contenido a {
+  color: #0056b3;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+}
+
+.contenido a:hover {
+  color: #d9534f;
+  text-decoration: underline;
+}
+
+/* Animación de contenido desplegable */
+.contenido {
+  display: none;
+  margin-top: 15px;
+  text-align: left;
+}
+
+.contenido.activo {
+  display: block;
+  animation: slideDown 0.3s ease-in-out;
+}
+
+/* Animación de despliegue */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

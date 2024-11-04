@@ -86,7 +86,7 @@ const getTasksRealtime = () => {
           <td>${category}</td>
           <td class="actions">
             <button class="btn btn-primary btn-eliminar" data-id="${id}">Eliminar</button>
-            <button class="btn btn-secondary btn-editar" data-id="${id}">Editar</button>
+            <button class="btn btn-secondary btn-editar-presentacion" data-id="${id}">Editar</button>
           </td>
         </tr>
       `;
@@ -110,7 +110,7 @@ const getTasksRealtime = () => {
     });
 
     // Selecciona todos los botones de editar
-    const btnEditar = document.querySelectorAll(".btn-editar");
+    const btnEditar = document.querySelectorAll(".btn-editar-presentacion");
 
     btnEditar.forEach(btn => {
       btn.addEventListener("click", async e => {
@@ -142,7 +142,7 @@ taskForm.addEventListener('submit', async (e) => {
 
   const titulo = taskTitle.value.trim();
   const descripcion = taskDescription.value.trim().replace(/\s\s+/g, ' ');
-  const categoria = taskCategoria.value.trim();
+  const categoria = taskCategoria.value.trim().toUpperCase();
   
   if (currentTaskId) {
     // Si hay un ID de tarea actual, se trata de una actualización
@@ -216,7 +216,7 @@ const getCursosRealtime = () => {
           <td>${subCategoria}</td>
           <td class="actions">
             <button class="btn btn-primary btn-eliminar" data-id="${id}">Eliminar</button>
-            <button class="btn btn-secondary btn-editar" data-id="${id}">Editar</button>
+            <button class="btn btn-secondary btn-editar-curso" data-id="${id}">Editar</button>
           </td>
         </tr>
       `;
@@ -238,7 +238,7 @@ const getCursosRealtime = () => {
     });
 
     // Manejo de eventos para los botones "Editar"
-    const btnEditarCurso = document.querySelectorAll(".btn-editar");
+    const btnEditarCurso = document.querySelectorAll(".btn-editar-curso");
     btnEditarCurso.forEach(btn => {
       btn.addEventListener("click", async e => {
         currentCursoId = e.target.dataset.id;
@@ -247,8 +247,8 @@ const getCursosRealtime = () => {
         // Mostrar datos del curso en el formulario
         cursoTitulo.value = curso.titulo;
         cursoLink.value = curso.link;
-        cursoCategoria.value = curso.categoria;
-        cursoSubCategoria.value = curso.subCategoria;
+        cursoCategoria.value = curso.categoria.toUpperCase();
+        cursoSubCategoria.value = curso.subCategoria.toUpperCase();
 
         // Cambiar color de los campos
         cursoTitulo.classList.add('edited');

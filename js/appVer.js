@@ -39,7 +39,7 @@ const mostrarDatos = () => {
           <p>${taskData.description}</p>
           <div class="contenedor_de_curso">
           <button class="acordeon">Ver Cursos</button>
-          <div id="contenido-${taskDoc.id}" class="contenido" style="display: none;"></div>
+          <div id="contenido-${taskDoc.id}" class="contenido " style="display: none;"></div>
           <button id="cerrar-${taskDoc.id}" class="boton-cerrar" style="display: none;">Cerrar</button>
           </div>
         </div>

@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;    
+}
+/* Agrega esto en tu archivo CSS */
+.edited {
+  background-color: lightgreen; /* Cambia el color de fondo a verde claro */
+}
+
+.card{
+  display: flex;
+  justify-content: center;
+  
+  gap: 40px;
+}
+
+.card-body{
+  width: 50%;
+}
+
+.curso{
+  width: 50%;
+}
+
+
+/*imput cursos*/
+
+
+
+
+/* presentacion de cursos eliminar editar */
+.presentacio{
+  display: flex;
+  gap: 20px;
+  border-radius: 4px, solid;
+}
+
+/* Estilos para la tabla */
+.table-responsive {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th, .table td {
+  padding: 8px 12px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.table-bordered th, .table-bordered td {
+  border: 1px solid #ddd;
+}
+
+.table thead th {
+  background-color: #f8f9fa;
+}
+
+/* Estilos para la columna de acciones */
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 5px;
+}
+
+/* Botones de acción */
+.btn {
+  font-size: 14px;
+  padding: 5px 10px;
+}
+
+.btn-eliminar {
+  background-color: #dc3545;
+  color: white;
+}
+
+.btn-editar {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Hover efectos */
+.btn:hover {
+  opacity: 0.85;
+}
+.cerrar {
+  padding: 8px 16px;
+  font-size: 1em;
+  background-color: #e0e0e0; /* Fondo gris claro */
+  color: #333;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.cerrar:hover {
+  background-color: #bcbcbc; /* Cambia a un tono más oscuro al pasar el cursor */
+}
+
+.acordeon{
+  width: 80%;
+}
+
+
+/* Estilos para la pantalla de contraseña */
+/* Estilos para la pantalla de contraseña */
+.password-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f4f6f9;
+  color: #333;
+  text-align: center;
+}
+
+.password-screen h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: 600;
+}
+
+.password-screen input {
+  margin: 10px 0;
+  padding: 12px 15px;
+  font-size: 16px;
+  width: 240px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  color: #333;
+}
+
+.password-screen button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #0073e6;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+}
+
+.password-screen button:hover {
+  background-color: #005bb5;
+}
+
+.password-screen input:focus {
+  outline: none;
+  border-color: #0073e6;
+  box-shadow: 0px 2px 6px rgba(0, 115, 230, 0.2);
+}
+
+#errorMessage {
+  color: #d9534f;
+  margin-top: 10px;
+  font-size: 14px;
+}
