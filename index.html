@@ -4,82 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/pulse/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/ver.css">
+    
 </head>
-<body>
-    <div class="container">
-        <!-- Tarjeta de Presentación de Cursos -->
-        <div class="card mt-3">
-            <div class="card-body">
-                <form id="task-form">
-                    <h3>Presentación de Cursos</h3>
-                    <div class="form-group">
-                        <input type="text" id="task-title" class="form-control" placeholder="Título de la tarea" autofocus>
-                    </div>
-                    <div class="form-group">
-                        <textarea name="task-description" id="task-description" class="form-control" placeholder="Descripción de la tarea"></textarea>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" id="task-categoria" class="form-control" placeholder="Categoría">
-                    </div>
-                    <button class="btn btn-primary" id="btn-task-form">Guardar</button>
-                </form>
-            </div>
-            <div class="container_curso">
-                <h2>Presentación de cursos</h2>
-                <div class="table-responsive mt-3">
-                    <table class="table table-bordered">
-                        <thead>
-                            <tr>
-                                <th>Título</th>
-                                <th>Descripción</th>
-                                <th>Categoría</th>
-                                <th>Acciones</th>
-                            </tr>
-                        </thead>
-                        <tbody id="task-container">
-                            <!-- Las filas de las tareas se generarán dinámicamente aquí -->
-                        </tbody>
-                    </table>
-                </div>
+<body class="body__ver">
+
+    <div class="cuerpo__page">
+        <div class="encabezado">
+            <h1>Correo Argentino</h1>
+            <ul class="menu__ver">
+                <li><a href="./formularioMdc.html">MDC</a></li>
+                
+            </ul>
         </div>
 
-        <!-- Formulario de Cursos -->
-        <div class="container_curso">
-            <h3>Cursos</h3>
-            <form id="form-curso">
-                <input type="text" id="cursoTitulo" placeholder="Título" required>
-                <input type="url" id="LinkTitulo" placeholder="Link forms" required>
-                <input type="text" id="categoriCurso" placeholder="Categoría" required>
-                <input type="text" id="subCategoriaCcurso" placeholder="Subcategoría" required>
-                <button type="submit">Guardar Curso</button>
-            </form>
-            <div class="contenedor_cursos">
-                <div class="table-responsive mt-3">
-                    <table class="table table-bordered">
-                        <thead>
-                            <tr>
-                                <th>Título</th>
-                                <th>Link forms</th>
-                                <th>Categoría</th>
-                                <th>Subcategoría</th>
-                                <th>Acciones</th>
-                            </tr>
-                        </thead>
-                        <tbody id="task-cursos">
-                            <!-- Las filas de las tareas se generarán dinámicamente aquí -->
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
         
-            </div>
-        </div>
-    </div>
+  <main class="main">
+    <div class="main__titulo">
+    <h1 class="titulo__capacitacion">Capacitaciones</h1>
+    <P class="subtitulo__capacitacion">Inscribite a los cursos disponibles </P>
+</div>
+    <div id="contenedorTarjetas" class="tarjetas">
+       
 
-    <!-- Referencia a app.js con type="module" -->
-    <script type="module" src="./js/app.js"></script>
+    </div>
+  </main>
+
+
+
+</div>
+<script type="module" src="./js/appVer.js"></script>
+
+
 </body>
 </html>
